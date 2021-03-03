@@ -14,7 +14,7 @@ Flat.destroy_all
     name: Faker::Address.city,
     address: Faker::Address.full_address,
     description: Faker::Lorem.paragraph(sentence_count: 3),
-    price_per_night: rand(100),
+    price_per_night: rand(50..180),
     number_of_guests: rand(1..4)
   )
   puts "Creating#{i}"

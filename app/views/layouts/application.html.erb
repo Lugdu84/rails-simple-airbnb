@@ -9,8 +9,16 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand">SimpleAirbnb</a>
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <%= link_to 'Add Flat', new_flat_path, class: 'btn btn-outline-primary my-2 my-sm-0 ml-2' %>
+    </form>
+  </nav>
   <body>
     <%= yield %>
   </body>
 </html>
+
+
